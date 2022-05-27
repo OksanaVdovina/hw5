@@ -40,7 +40,7 @@ public class Main {
             else { System.out.print(chars[i] + ", ");
             }
         }
-        System.out.print("\n");
+        System.out.println("\n");
     }
 
     public static void task3() {
@@ -49,52 +49,44 @@ public class Main {
         char[] chars = {'a', 'b', 'c'};
 
         // Задание на обратные 5,7,9:
-        for (int i = 0; i < numbers.length; i++) {
-            int index = numbers.length - 1 - i;
-            if (index == 0) {
-                System.out.print(numbers[index]);
+        for (int i = numbers.length - 1; i >= 0; i--) {
+             if (i == 0) {
+                System.out.print(numbers[i]);
             }
-           else System.out.print(numbers[index] + ", ");
+           else System.out.print(numbers[i] + ", ");
         }
         System.out.print("\n");
 
         // Задание на обратные numbers2:
-        for (int i = 0; i < numbers2.length; i++) {
-            int index = numbers2.length - 1 - i;
-            if (index == 0) {
-                System.out.print(numbers2[index]);
+        for (int i = numbers2.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(numbers2[i]);
             }
-            else System.out.print(numbers2[index] + ", ");
+            else System.out.print(numbers2[i] + ", ");
         }
         System.out.print("\n");
 
         // Задание на обратные chars:
-        for (int i = 0; i < chars.length; i++) {
-            int index = chars.length - 1 - i;
-            if (index == 0) {
-                System.out.print(chars[index]);
+        for (int i = chars.length - 1; i >= 0; i--) {
+            if (i == 0) {
+                System.out.print(chars[i]);
             }
-            else System.out.print(chars[index] + ", ");
+            else System.out.print(chars[i] + ", ");
         }
-        System.out.print("\n");
+        System.out.println("\n");
     }
 
     public static void task4() {
-        int[] numbers = {5, 7, 9};
+        int[] numbers = {5, 8, 9};
         double[] numbers2 = {1.57, 7.654, 9.986};
         char[] chars = {'a', 'b', 'c'};
 
-        for (int i = 0; i < numbers.length; i++) {
-            int summ = 1 + numbers[i];
-            System.out.print(summ + ", ");
-        }
-        System.out.print("\n");
-
-        for (int i = 0; i < numbers2.length; i++) {
-            double summ = 1 + numbers2[i];
-            System.out.print(summ + ", ");
-        }
-        System.out.print("\n");
+        for (int i = 0; i <= numbers.length - 1; i++) {
+            if (numbers[i] % 2 != 0) {
+                System.out.print(numbers[i] + 1 + ", ");
+                }
+            else System.out.print(numbers[i] + ", ");
+            }
 
     }
 }
